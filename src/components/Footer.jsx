@@ -21,7 +21,7 @@ const Footer = () => {
             <li>
               {/* Replace with icon later */}
               <span><FaYoutube /> </span>
-              <a href="https://youtube.com/@craftedcuriosity" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@CraftedCuriosity-b3q" target="_blank" rel="noopener noreferrer">
                 Crafted Curiosity
               </a>
             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li>
               <span><FaLinkedin /> </span>
-              <a href="https://linkedin.com/in/soumyajit-sinha" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/soumyajit-sinha-7652b7189/" target="_blank" rel="noopener noreferrer">
                 Soumyajit Sinha
               </a>
             </li>
