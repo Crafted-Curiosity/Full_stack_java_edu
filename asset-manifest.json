@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a3a36ef.css",
-    "main.js": "/static/js/main.a744e063.js",
+    "main.css": "/static/css/main.4f120d37.css",
+    "main.js": "/static/js/main.cd577a37.js",
     "static/js/453.225dc9c8.chunk.js": "/static/js/453.225dc9c8.chunk.js",
     "static/media/crafted-curiosity.png": "/static/media/crafted-curiosity.90dd03903919871f2dac.png",
     "index.html": "/index.html",
-    "main.7a3a36ef.css.map": "/static/css/main.7a3a36ef.css.map",
-    "main.a744e063.js.map": "/static/js/main.a744e063.js.map",
+    "main.4f120d37.css.map": "/static/css/main.4f120d37.css.map",
+    "main.cd577a37.js.map": "/static/js/main.cd577a37.js.map",
     "453.225dc9c8.chunk.js.map": "/static/js/453.225dc9c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a3a36ef.css",
-    "static/js/main.a744e063.js"
+    "static/css/main.4f120d37.css",
+    "static/js/main.cd577a37.js"
   ]
 }
