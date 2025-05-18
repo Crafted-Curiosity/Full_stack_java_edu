@@ -1,0 +1,106 @@
+
+.header{
+    background-color: #39094c;
+    padding: 10px 20px;
+    margin:2px;
+}
+
+/* Logo Section */
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+  }
+ 
+
+.header-logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.logo-text{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Hover Effect */
+.header-logo a:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Navigation */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav ul li a {
+  
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+}
+
+/* Checkbox toggle hidden */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #39094c;
+    padding: 10px 0;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  /* Show nav when checkbox is checked */
+  .menu-toggle:checked ~ .hamburger + .header-nav {
+    display: flex;
+  }
+}

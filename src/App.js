@@ -1,12 +1,16 @@
 import React from 'react';
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import './App.css';
+import './styling/Main.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <p>
-      Welcome to Crafted Curiosity!
-    </p>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

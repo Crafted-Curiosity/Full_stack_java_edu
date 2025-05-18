@@ -1,0 +1,16 @@
+/* Import Audiowide font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+  --primary : #454657;
+  --border: #D8D8D9;
+  --white: #fff;
+  min-height: 100%;
+  --bg-gradient: linear-gradient(180deg, #d466cc 0%,  #9a23c2 50%, #323232 100%);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
