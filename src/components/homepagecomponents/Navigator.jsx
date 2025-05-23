@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import DisplayContent from "./DisplayContent";
 import generateReferencePath from "../../utils/ReferencePathGenerator";
 import SprintData,{ getAllSprints, getDayFolders } from "../../utils/DynamicLoader";
+import "../../styling/homepagestyling/navigator.css";
 
 const Navigator = () => {
     const [selectedSprint, setSelectedSprint] = useState("SPRINT_01");

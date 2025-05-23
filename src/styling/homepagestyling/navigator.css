@@ -1,0 +1,123 @@
+/* Root container */
+.navigator {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #e1c1ee;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main content layout */
+.navigator-content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.sprint-menu, .day-menu {
+  background-color: #ffffff;
+  padding: 5px;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(57, 9, 76, 0.1);
+  flex: 1;
+  min-width: 100px;
+}
+
+.sprint-menu h2,
+.day-menu h2 {
+  color: #39094c;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #e4d5ec;
+  padding-bottom: 8px;
+}
+
+.sprint-list,
+.day-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigator-button {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #eee4f3;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigator-button:hover {
+  background-color: #d7b9e8;
+  border-color: #39094c;
+  color: #39094c;
+}
+
+.navigator-button.active {
+  background-color: #39094c;
+  color: white;
+  font-weight: bold;
+  border-color: #240633;
+}
+
+.day-id-style {
+  font-weight: bold;
+  color: #240633;
+  display: inline-block;
+  width: 90px;
+}
+
+
+
+.day-name-style {
+  color: #a991b6;
+  opacity: 0.85;
+}
+
+/* Content area */
+.content-display {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(57, 9, 76, 0.08);
+}
+
+.content-display h1 {
+  color: #39094c;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .navigator-content {
+    flex-direction: column;
+  }
+
+  .sprint-menu,
+  .day-menu,
+  .content-display {
+    width: 100%;
+  }
+
+  .day-id-style {
+    width: auto;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .day-name-style {
+    display: block;
+  }
+}
+

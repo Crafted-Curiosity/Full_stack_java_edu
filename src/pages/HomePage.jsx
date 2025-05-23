@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Navigator from "../components/homepagecomponents/Navigator";
+import Welcomer from "../components/homepagecomponents/Welcomer";
 //import EachDayTemplate from "../template/EachDayTemplate";
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
+      <Welcomer />
       <Navigator />
       <Footer />
     </>
