@@ -23,6 +23,10 @@ jobs:
       - name: Build React app
         run: npm run build
 
+      - name: Add 404.html for React Router support
+        run: cp build/index.html build/404.html
+
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
