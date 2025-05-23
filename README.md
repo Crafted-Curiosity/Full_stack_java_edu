@@ -2,7 +2,7 @@
 
 A responsive web tool to explore and navigate through your structured Full Stack Java Sprint learning roadmap. This app is part of the **Crafted Curiosity** ecosystem and helps track progress, view notes, assignments, cheat sheets, and plan learning paths visually.
 
-![Java Sprint Navigator Preview](src\assets\preview.jpg) <!-- Add screenshot if available -->
+![Java Sprint Navigator Preview](src/assets/preview.jpg) <!-- Add screenshot if available -->
 
 ---
 
