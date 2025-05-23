@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import MarkdownRenderer from "../../utils/MarkdownRenderer"; // Import the MarkdownRenderer component
-import MDDownloader from "../../utils/MDDdownloader"; // Import the MDDownloader utility
+//import MDDownloader from "../../utils/MDDdownloader"; // Import the MDDownloader utility
 // imports path string in form of: "../Materials/${normalizedSprint}/${normalizedDay}/"
 
 const DisplayContent = ({ path, sprintId, sprintName, dayId, dayName }) => {
@@ -40,14 +40,14 @@ const DisplayContent = ({ path, sprintId, sprintName, dayId, dayName }) => {
         <div className="content-display-container">
             <div className="content-display-cd">
           <h3>{activeTab}</h3>
-            {activeTab === "Cheat Sheets" && (
+            {/*activeTab === "Cheat Sheets" && (
                 <MDDownloader
                     downloadUrl={filePath}
                     filename={`${sprintId}_${dayId}_Cheatsheet.md`} // custom download filename
                 >
                     <button className="btn-cheatsheet">Download</button>
                 </MDDownloader>
-            )}
+            )*/}
             <MarkdownRenderer src={filePath} />
           </div>
         </div>
