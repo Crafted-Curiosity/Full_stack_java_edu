@@ -11,6 +11,7 @@ const Welcomer = () => {
             <div className="welcomer-text">
                 <h1>Welcome to Crafted Curiosity - Edu</h1>
                 <h4>Engage | Create | Transform</h4>
+                <p>A <em>Crafted Curiosity&#x00A9;</em> venture.</p>
             </div>
         </div>
             

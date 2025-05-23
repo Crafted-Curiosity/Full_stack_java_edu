@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import MarkdownRenderer from "../../utils/MarkdownRenderer"; // Import the MarkdownRenderer component
 //import MDDownloader from "../../utils/MDDdownloader"; // Import the MDDownloader utility
 // imports path string in form of: "../Materials/${normalizedSprint}/${normalizedDay}/"
+import '../../styling/homepagestyling/displaycontent.css'; // Import the CSS file for styling
 
 const DisplayContent = ({ path, sprintId, sprintName, dayId, dayName }) => {
     const [activeTab, setActiveTab] = useState("Notes");
