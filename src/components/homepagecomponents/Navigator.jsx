@@ -39,7 +39,7 @@ const Navigator = () => {
                                 className={`navigator-button ${selectedSprint === sprintId ? "active" : ""}`}
                                 onClick={() => setSelectedSprint(sprintId)}
                             >
-                                {sprintName}
+                                {sprintId} - {sprintName}
                             </button>
                         </li>
                     ))}
@@ -66,8 +66,14 @@ const Navigator = () => {
         </div>
 
         <div className="content-display">
-            <h2>Content Display</h2>
-            <DisplayContent path={contentPath} />
+            <h1>Enjoy Gaining Knowledge</h1>
+            <DisplayContent
+                path={contentPath}
+                    sprintId={selectedSprint}
+                    sprintName={SprintData[selectedSprint]?.sprintName || selectedSprint}
+                    dayId={selectedDay}
+                    dayName={dayList.find(day => day.dayId === selectedDay)?.dayName || ''}
+            />
         </div>    
     </section>
     );

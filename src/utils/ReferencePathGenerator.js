@@ -8,7 +8,7 @@
 const generateReferencePath = (sprintId, dayId) => {
   if (!sprintId || !dayId) {
     console.warn("Missing sprintId or dayId in generateReferencePath");
-    return '../../Materials/DataNotReady.md';
+    return '/Materials/DataNotReady.md';
   }
 
   // Normalize input to ensure consistency
@@ -16,7 +16,7 @@ const generateReferencePath = (sprintId, dayId) => {
   const normalizedDay = dayId.toUpperCase().replace(/\s+/g, "_");
 
   // Return relative path for use in markdown renderer or content fetcher
-  return `../Materials/${normalizedSprint}/${normalizedDay}/Notes.md`;
+  return `/Materials/${normalizedSprint}/${normalizedDay}/`;
 };
 
 export default generateReferencePath;

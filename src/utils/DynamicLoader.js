@@ -7,7 +7,7 @@
 
 const SprintData = {
   SPRINT_01: {
-    sprintName: "Sprint 01 - Core Java Mastery",
+    sprintName: "Core Java Mastery",
     days: {
       DAY_000: { dayName: "Introduction" },
       DAY_001: { dayName: "Data Types & Variables" },
@@ -17,7 +17,7 @@ const SprintData = {
     }
   },
   SPRINT_02: {
-    sprintName: "Sprint 02 - DSA & Problem Solving",
+    sprintName: "DSA & Problem Solving",
     days: {
       DAY_000: { dayName: "Big-O & Complexity" },
       // ...

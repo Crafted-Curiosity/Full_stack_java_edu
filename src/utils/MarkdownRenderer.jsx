@@ -1,31 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import PropTypes from 'prop-types';
-//import '../styling/markdown.css'; // Optional: your markdown styles
+import React, { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
-const MarkdownRenderer = ({ file, content }) => {
-  const [markdown, setMarkdown] = useState('');
+const fallbackPath = "/Materials/DataNotReady.md"; // your fallback Markdown path
+
+const MarkdownRenderer = ({ src }) => {
+  const [content, setContent] = useState("");
 
   useEffect(() => {
-    if (file) {
-      fetch(file)
-        .then((res) => res.text())
-        .then((text) => setMarkdown(text));
-    } else if (content) {
-      setMarkdown(content);
-    }
-  }, [file, content]);
+    const fetchContent = async (url) => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("File not found");
+
+        const text = await res.text();
+
+        // Check if the content looks like HTML (indicating fallback index.html was served)
+        if (text.trim().startsWith("<!DOCTYPE") || text.trim().startsWith("<html") || text.includes("<body")) {
+          // If HTML detected, fetch fallback markdown instead
+          const fallbackRes = await fetch(fallbackPath);
+          if (!fallbackRes.ok) throw new Error("Fallback file not found");
+          const fallbackText = await fallbackRes.text();
+          setContent(fallbackText);
+        } else {
+          // If not HTML, set the fetched markdown content normally
+          setContent(text);
+        }
+      } catch (err) {
+        // On fetch error, load fallback markdown
+        try {
+          const fallbackRes = await fetch(fallbackPath);
+          if (!fallbackRes.ok) throw new Error("Fallback file not found");
+          const fallbackText = await fallbackRes.text();
+          setContent(fallbackText);
+        } catch (fallbackErr) {
+          setContent("# Error loading content");
+          console.error(fallbackErr);
+        }
+      }
+    };
+
+    fetchContent(src);
+  }, [src]);
 
   return (
     <div className="markdown-body">
-      <ReactMarkdown>{markdown}</ReactMarkdown>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );
-};
-
-MarkdownRenderer.propTypes = {
-  file: PropTypes.string,
-  content: PropTypes.string,
 };
 
 export default MarkdownRenderer;
