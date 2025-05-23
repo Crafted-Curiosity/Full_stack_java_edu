@@ -28,4 +28,4 @@ A responsive web tool to explore and navigate through your structured Full Stack
 
 ## 🛠️ Getting Started
 
-visit at [Crafted Curiosity - Edu](edu.craftedcuriosity.org) 
+visit at [Crafted Curiosity - Edu](http://edu.craftedcuriosity.org) 
