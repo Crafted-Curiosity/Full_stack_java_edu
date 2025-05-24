@@ -1,0 +1,50 @@
+.site-construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+.site-construction-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(57, 9, 76, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.construction-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+.site-construction-card h1 {
+  color: #39094c;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.site-construction-card p {
+  color: #6d537e;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #b59cc7;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
