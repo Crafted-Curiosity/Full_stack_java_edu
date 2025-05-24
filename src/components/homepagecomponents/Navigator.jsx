@@ -31,7 +31,7 @@ const Navigator = () => {
 
         <div className="navigator-content">
             <div className="sprint-menu">
-                <h2>Sprint Menu</h2>
+                <h2>Full Stack Java: Sprint Menu</h2>
                 <ul className="sprint-list">
                      {getAllSprints().map(({ sprintId, sprintName }) => (
                         <li key={sprintId}>
@@ -67,7 +67,7 @@ const Navigator = () => {
         </div>
 
         <div className="content-display">
-            <h1>Enjoy Gaining Knowledge</h1>
+            <h1>Relax & Enjoy Gaining Knowledge</h1>
             <DisplayContent
                 path={contentPath}
                     sprintId={selectedSprint}
@@ -75,7 +75,17 @@ const Navigator = () => {
                     dayId={selectedDay}
                     dayName={dayList.find(day => day.dayId === selectedDay)?.dayName || ''}
             />
-        </div>    
+        </div>
+        <div className="embed-music">
+            <h1>Listen to Music, while you study</h1>
+            <iframe 
+                src="https://www.youtube.com/embed/ptHnmgaFvwE?si=r3MOgGjTq9xZJ_iO" 
+                title="Relaxing Music" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>   
     </section>
     );
 };

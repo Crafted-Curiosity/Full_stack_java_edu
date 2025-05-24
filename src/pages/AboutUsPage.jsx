@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AboutUsInfo from "../components/aboutuscomponents/AboutUsInfo"; // Import the AboutUsInfo component
 
 import { useEffect } from "react";
 const AboutUsPage = () => {
@@ -13,6 +14,7 @@ const AboutUsPage = () => {
   return (
     <>
       <Header />
+      <AboutUsInfo />
       <Footer />
     </>
   );
