@@ -121,3 +121,35 @@
   }
 }
 
+/* Embedded Music Section styled like content-display */
+.embed-music {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(57, 9, 76, 0.08);
+  margin-top: 20px;
+}
+
+.embed-music h1 {
+  color: #39094c;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Responsive iframe */
+.embed-music iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .embed-music iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
