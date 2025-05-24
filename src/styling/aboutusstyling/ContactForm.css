@@ -1,0 +1,114 @@
+/* General section styling */
+.contactus-form-section {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+.contactus-form-container {
+  background-color: #f1c0ea;
+  padding: 10px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.contactus-form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2b073b;
+}
+
+/* Fieldsets */
+.contactus-form-fieldset {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Legend styling */
+.contactus-form-fieldset legend {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #34495e;
+  padding: 0 0.5rem;
+}
+
+/* Labels */
+.contactus-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Inputs & Select */
+.contactus-form-input,
+.contactus-form-select,
+.contactus-form-textarea {
+  width: 92%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.contactus-form-input:focus,
+.contactus-form-select:focus,
+.contactus-form-textarea:focus {
+  border-color: #3f0b3e;
+  outline: none;
+}
+
+/* Textarea */
+.contactus-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Buttons */
+.contactus-form-submit,
+.contactus-form-reset {
+  padding: 0.75rem 2rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contactus-form-submit {
+  background-color: #9432b1;
+  color: white;
+  margin-left: 30px;
+}
+
+.contactus-form-submit:hover {
+  background-color: #461050;
+}
+
+.contactus-form-reset {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.contactus-form-reset:hover {
+  background-color: #d5d5d5;
+}
+
+/* Note */
+.contactus-form-note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  text-align: center;
+}
